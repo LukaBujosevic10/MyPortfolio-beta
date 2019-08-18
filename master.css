@@ -1,0 +1,95 @@
+*{
+    padding: 0%;
+    margin: 0px;
+    user-select: none;
+}
+
+/*Mali uredjji*/
+@media only screen and (max-width: 400px) {
+    #meni_pc{
+        display: none;
+    }
+    header{
+        height: 20vw;
+        width: 100%;
+        background: black;
+        position: fixed;
+        color: white;
+    }
+    #home{
+        /*position: relative;*/
+        position: absolute;
+        margin-top: 15vw; 
+        height: 140vw;
+
+        width: 100%;
+        background-image: url(mobilehome.jpg);
+        background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+    }
+    #naziv{
+        height: 50%;
+        width: 50%;
+        /*font-size: 10vw;*/
+        font-family: 'Pacifico', cursive;
+        line-height: 15vw;
+        float: left;
+    }
+    #meni_mobile{
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+    i{
+        color: white;
+        height: 100%;
+    }
+}
+/*Veliki uredjaji*/
+@media only screen and (min-width: 400px) {
+    a{
+        color: white;
+        font-size: 1.9vw;
+        text-decoration: none;
+    }
+    #meni_mobile{
+        display: none;
+    }
+    #naziv{
+        width: 60%;
+        font-size: 2.9vw;
+        font-family: 'Pacifico', cursive;
+        line-height: 3.7vw;
+        float: left;
+    }
+    header{
+        color: white;
+        height: 3.7vw;
+        width: 100%;
+        background: black;
+        position: fixed;
+    }
+    #home{
+        width: 100%;
+        height: 50vw;
+        background-image: url(homeimage.jpg);
+        background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+    }
+    #meni_pc{
+        height: 50%;
+        width: 40%;
+        float: left;
+        margin-top: 1%; 
+    }
+    .meni{
+        height: 100%;
+        width: 25%;
+        text-align: center;
+        float: left;
+        
+    }
+
+}
